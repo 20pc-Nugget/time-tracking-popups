@@ -32,17 +32,14 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.events.RuneScapeProfileChanged;
 import net.runelite.client.plugins.Plugin;
-import net.runelite.client.plugins.PluginDependency;
 import net.runelite.client.plugins.PluginDescriptor;
-import net.runelite.client.plugins.timetracking.TimeTrackingPlugin;
 import net.runelite.client.ui.overlay.OverlayManager;
 
 @PluginDescriptor(
-	name = "Time Tracking Popups",
-	description = "Collection log style popup and sound when the farming patches, compost bins and bird houses Time Tracking follows are ready or diseased",
-	tags = {"farming", "time tracking", "herb", "coral", "patch", "popup", "notification", "reminder", "birdhouse"}
+		name = "Time Tracking Popups",
+		description = "Collection log style popup and sound when your farming patches, compost bins and bird houses are ready or diseased. Needs the Time Tracking plugin enabled",
+		tags = {"farming", "time tracking", "herb", "coral", "patch", "popup", "notification", "reminder", "birdhouse"}
 )
-@PluginDependency(TimeTrackingPlugin.class)
 public class FarmingPatchPopupPlugin extends Plugin
 {
 	/** How often the patches are re-checked, in game ticks (0.6s each). */
@@ -52,12 +49,12 @@ public class FarmingPatchPopupPlugin extends Plugin
 	private static final long BIRD_HOUSE_SECONDS = 50 * 60;
 	private static final int BIRD_HOUSE_MAX_VARP = 9 * 3;
 	private static final int[] BIRD_HOUSE_ITEMS = {
-		ItemID.BIRDHOUSE_NORMAL, ItemID.BIRDHOUSE_OAK, ItemID.BIRDHOUSE_WILLOW, ItemID.BIRDHOUSE_TEAK, ItemID.BIRDHOUSE_MAPLE,
-		ItemID.BIRDHOUSE_MAHOGANY, ItemID.BIRDHOUSE_YEW, ItemID.BIRDHOUSE_MAGIC, ItemID.BIRDHOUSE_REDWOOD
+			ItemID.BIRDHOUSE_NORMAL, ItemID.BIRDHOUSE_OAK, ItemID.BIRDHOUSE_WILLOW, ItemID.BIRDHOUSE_TEAK, ItemID.BIRDHOUSE_MAPLE,
+			ItemID.BIRDHOUSE_MAHOGANY, ItemID.BIRDHOUSE_YEW, ItemID.BIRDHOUSE_MAGIC, ItemID.BIRDHOUSE_REDWOOD
 	};
 	private static final String[] BIRD_HOUSE_NAMES = {
-		"Bird house", "Oak bird house", "Willow bird house", "Teak bird house", "Maple bird house",
-		"Mahogany bird house", "Yew bird house", "Magic bird house", "Redwood bird house"
+			"Bird house", "Oak bird house", "Willow bird house", "Teak bird house", "Maple bird house",
+			"Mahogany bird house", "Yew bird house", "Magic bird house", "Redwood bird house"
 	};
 
 	// Markers kept in this plugin's own config group (per RuneScape profile) so each ready / diseased
@@ -295,7 +292,7 @@ public class FarmingPatchPopupPlugin extends Plugin
 		{
 			String markerKey = DISEASED_PREFIX + entry.getKey();
 			if (!diseasedKeys.contains(entry.getKey())
-				&& configManager.getRSProfileConfiguration(FarmingPatchPopupConfig.GROUP, markerKey) != null)
+					&& configManager.getRSProfileConfiguration(FarmingPatchPopupConfig.GROUP, markerKey) != null)
 			{
 				configManager.unsetRSProfileConfiguration(FarmingPatchPopupConfig.GROUP, markerKey);
 			}
@@ -453,15 +450,15 @@ public class FarmingPatchPopupPlugin extends Plugin
 
 		boolean single = ordered.size() == 1;
 		return new PopupData(
-			titleCase(category.getDisplayName()) + (diseased ? " Diseased" : " Ready"),
-			title,
-			new ArrayList<>(icons),
-			category.getTier(),
-			diseased ? DISEASED_COLOR : category.getColor(),
-			single ? "Patch" : "Patches",
-			single ? ordered.get(0).entry.getLabel() : String.valueOf(ordered.size()),
-			diseased ? "Needs" : "Ready to",
-			diseased ? "Curing" : category.getVerb());
+				titleCase(category.getDisplayName()) + (diseased ? " Diseased" : " Ready"),
+				title,
+				new ArrayList<>(icons),
+				category.getTier(),
+				diseased ? DISEASED_COLOR : category.getColor(),
+				single ? "Patch" : "Patches",
+				single ? ordered.get(0).entry.getLabel() : String.valueOf(ordered.size()),
+				diseased ? "Needs" : "Ready to",
+				diseased ? "Curing" : category.getVerb());
 	}
 
 	/** The popup for several patch types at once: "Multiple resources ready". */
@@ -479,15 +476,15 @@ public class FarmingPatchPopupPlugin extends Plugin
 		}
 
 		return new PopupData(
-			diseased ? "Farming Alert" : "Farming Patches",
-			diseased ? "Multiple Crops Diseased" : "Multiple Resources Ready",
-			new ArrayList<>(icons),
-			diseased ? PopupTier.RARE : PopupTier.UNCOMMON,
-			diseased ? DISEASED_COLOR : FARMING_GREEN,
-			"Patches",
-			String.valueOf(patches),
-			diseased ? "Needs" : "Types",
-			diseased ? "Curing" : String.valueOf(events.size()));
+				diseased ? "Farming Alert" : "Farming Patches",
+				diseased ? "Multiple Crops Diseased" : "Multiple Resources Ready",
+				new ArrayList<>(icons),
+				diseased ? PopupTier.RARE : PopupTier.UNCOMMON,
+				diseased ? DISEASED_COLOR : FARMING_GREEN,
+				"Patches",
+				String.valueOf(patches),
+				diseased ? "Needs" : "Types",
+				diseased ? "Curing" : String.valueOf(events.size()));
 	}
 
 	private static List<Status> sorted(List<Status> statuses)
@@ -520,24 +517,24 @@ public class FarmingPatchPopupPlugin extends Plugin
 	{
 		List<Integer> icons = Arrays.asList(Produce.RANARR.getItemID(), Produce.SNAPDRAGON.getItemID(), Produce.TORSTOL.getItemID());
 		overlay.enqueue(new PopupData(
-			titleCase(Category.HERB.getDisplayName()) + " Ready",
-			"Mixed herbs",
-			icons,
-			Category.HERB.getTier(),
-			Category.HERB.getColor(),
-			"Patches",
-			"9",
-			"Ready to",
-			Category.HERB.getVerb()));
+				titleCase(Category.HERB.getDisplayName()) + " Ready",
+				"Mixed herbs",
+				icons,
+				Category.HERB.getTier(),
+				Category.HERB.getColor(),
+				"Patches",
+				"9",
+				"Ready to",
+				Category.HERB.getVerb()));
 		overlay.enqueue(new PopupData(
-			titleCase(Category.HERB.getDisplayName()) + " Diseased",
-			Produce.RANARR.getName(),
-			Arrays.asList(Produce.RANARR.getItemID()),
-			Category.HERB.getTier(),
-			DISEASED_COLOR,
-			"Patch",
-			"Catherby",
-			"Needs",
-			"Curing"));
+				titleCase(Category.HERB.getDisplayName()) + " Diseased",
+				Produce.RANARR.getName(),
+				Arrays.asList(Produce.RANARR.getItemID()),
+				Category.HERB.getTier(),
+				DISEASED_COLOR,
+				"Patch",
+				"Catherby",
+				"Needs",
+				"Curing"));
 	}
 }

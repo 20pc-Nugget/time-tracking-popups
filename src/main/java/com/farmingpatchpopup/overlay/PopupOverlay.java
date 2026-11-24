@@ -21,9 +21,6 @@ import java.awt.Shape;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UncheckedIOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.EnumMap;
@@ -31,7 +28,6 @@ import java.util.HashMap;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
-import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import lombok.Value;
@@ -41,6 +37,7 @@ import net.runelite.client.ui.FontManager;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
+import net.runelite.client.util.ImageUtil;
 
 @Singleton
 public class PopupOverlay extends Overlay
@@ -397,14 +394,7 @@ public class PopupOverlay extends Overlay
 
 	private static BufferedImage loadImage(String resourceName)
 	{
-		try (InputStream in = PopupOverlay.class.getResourceAsStream("/" + resourceName))
-		{
-			return ImageIO.read(in);
-		}
-		catch (IOException e)
-		{
-			throw new UncheckedIOException("Failed to load overlay image " + resourceName, e);
-		}
+		return ImageUtil.loadImageResource(PopupOverlay.class, "/" + resourceName);
 	}
 
 	// ---------------------------------------------------------------- rendering

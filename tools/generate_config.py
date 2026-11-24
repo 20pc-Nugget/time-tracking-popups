@@ -288,8 +288,7 @@ def main():
 		name = "Sound",
 		description = "Town crier sounds are the game's own sound effects."
 			+ "<br>Clips are the sounds from Collection Log Popup Enhanced (match popup colour picks the one that goes with each panel)."
-			+ "<br>Use the test popup to hear your choice. To replace a clip with your own, put a .wav named common, uncommon, rare,"
-			+ " very_rare or pet in .runelite/time-tracking-popups/sounds.",
+			+ "<br>Use the test popup to hear your choice.",
 		position = 1,
 		section = soundSection
 	)
@@ -365,9 +364,7 @@ def main():
             w(f"\t\tname = {java_str('• ' + label)},")
             w(f"\t\tdescription = {java_str('Include ' + label + ' in the ' + lower + ' popup')},")
             w(f"\t\tposition = {n},")
-            w(f"\t\tsection = {sec},")
-            w("\t\thidden = true,")
-            w(f'\t\tunhide = "{master_key}"')
+            w(f"\t\tsection = {sec}")
             w("\t)")
             w(f"\tdefault boolean {camel(key)}()")
             w("\t{")

@@ -189,8 +189,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "Sound",
 		description = "Town crier sounds are the game's own sound effects."
 			+ "<br>Clips are the sounds from Collection Log Popup Enhanced (match popup colour picks the one that goes with each panel)."
-			+ "<br>Use the test popup to hear your choice. To replace a clip with your own, put a .wav named common, uncommon, rare,"
-			+ " very_rare or pet in .runelite/time-tracking-popups/sounds.",
+			+ "<br>Use the test popup to hear your choice.",
 		position = 1,
 		section = soundSection
 	)
@@ -250,9 +249,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Ardougne",
 		description = "Include Ardougne in the herb patches popup",
 		position = 1,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbArdougne()
 	{
@@ -264,9 +261,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Catherby",
 		description = "Include Catherby in the herb patches popup",
 		position = 2,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbCatherby()
 	{
@@ -278,9 +273,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Civitas illa Fortis",
 		description = "Include Civitas illa Fortis in the herb patches popup",
 		position = 3,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbCivitasillafortis()
 	{
@@ -292,9 +285,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Falador",
 		description = "Include Falador in the herb patches popup",
 		position = 4,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbFalador()
 	{
@@ -306,9 +297,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the herb patches popup",
 		position = 5,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbFarmingguild()
 	{
@@ -320,9 +309,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Harmony",
 		description = "Include Harmony in the herb patches popup",
 		position = 6,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbHarmony()
 	{
@@ -334,9 +321,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend",
 		description = "Include Kourend in the herb patches popup",
 		position = 7,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbKourend()
 	{
@@ -348,9 +333,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Morytania",
 		description = "Include Morytania in the herb patches popup",
 		position = 8,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbMorytania()
 	{
@@ -362,9 +345,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Troll Stronghold",
 		description = "Include Troll Stronghold in the herb patches popup",
 		position = 9,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbTrollstronghold()
 	{
@@ -376,9 +357,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Weiss",
 		description = "Include Weiss in the herb patches popup",
 		position = 10,
-		section = herbSection,
-		hidden = true,
-		unhide = "herb_enabled"
+		section = herbSection
 	)
 	default boolean herbWeiss()
 	{
@@ -405,9 +384,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Great Conch East",
 		description = "Include Great Conch East in the coral patches popup",
 		position = 1,
-		section = coralSection,
-		hidden = true,
-		unhide = "coral_enabled"
+		section = coralSection
 	)
 	default boolean coralGreatconcheast()
 	{
@@ -419,9 +396,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Great Conch West",
 		description = "Include Great Conch West in the coral patches popup",
 		position = 2,
-		section = coralSection,
-		hidden = true,
-		unhide = "coral_enabled"
+		section = coralSection
 	)
 	default boolean coralGreatconchwest()
 	{
@@ -448,9 +423,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Ardougne North",
 		description = "Include Ardougne North in the allotment patches popup",
 		position = 1,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentArdougnenorth()
 	{
@@ -462,9 +435,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Ardougne South",
 		description = "Include Ardougne South in the allotment patches popup",
 		position = 2,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentArdougnesouth()
 	{
@@ -476,9 +447,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Catherby North",
 		description = "Include Catherby North in the allotment patches popup",
 		position = 3,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentCatherbynorth()
 	{
@@ -490,9 +459,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Catherby South",
 		description = "Include Catherby South in the allotment patches popup",
 		position = 4,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentCatherbysouth()
 	{
@@ -504,9 +471,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Civitas illa Fortis North",
 		description = "Include Civitas illa Fortis North in the allotment patches popup",
 		position = 5,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentCivitasillafortisnorth()
 	{
@@ -518,9 +483,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Civitas illa Fortis South",
 		description = "Include Civitas illa Fortis South in the allotment patches popup",
 		position = 6,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentCivitasillafortissouth()
 	{
@@ -532,9 +495,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Falador North West",
 		description = "Include Falador North West in the allotment patches popup",
 		position = 7,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentFaladornorthwest()
 	{
@@ -546,9 +507,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Falador South East",
 		description = "Include Falador South East in the allotment patches popup",
 		position = 8,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentFaladorsoutheast()
 	{
@@ -560,9 +519,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild North",
 		description = "Include Farming Guild North in the allotment patches popup",
 		position = 9,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentFarmingguildnorth()
 	{
@@ -574,9 +531,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild South",
 		description = "Include Farming Guild South in the allotment patches popup",
 		position = 10,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentFarmingguildsouth()
 	{
@@ -588,9 +543,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Harmony",
 		description = "Include Harmony in the allotment patches popup",
 		position = 11,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentHarmony()
 	{
@@ -602,9 +555,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend North East",
 		description = "Include Kourend North East in the allotment patches popup",
 		position = 12,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentKourendnortheast()
 	{
@@ -616,9 +567,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend South West",
 		description = "Include Kourend South West in the allotment patches popup",
 		position = 13,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentKourendsouthwest()
 	{
@@ -630,9 +579,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Morytania North West",
 		description = "Include Morytania North West in the allotment patches popup",
 		position = 14,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentMorytanianorthwest()
 	{
@@ -644,9 +591,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Morytania South East",
 		description = "Include Morytania South East in the allotment patches popup",
 		position = 15,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentMorytaniasoutheast()
 	{
@@ -658,9 +603,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Prifddinas North",
 		description = "Include Prifddinas North in the allotment patches popup",
 		position = 16,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentPrifddinasnorth()
 	{
@@ -672,9 +615,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Prifddinas South",
 		description = "Include Prifddinas South in the allotment patches popup",
 		position = 17,
-		section = allotmentSection,
-		hidden = true,
-		unhide = "allotment_enabled"
+		section = allotmentSection
 	)
 	default boolean allotmentPrifddinassouth()
 	{
@@ -701,9 +642,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Ardougne",
 		description = "Include Ardougne in the flower patches popup",
 		position = 1,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerArdougne()
 	{
@@ -715,9 +654,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Catherby",
 		description = "Include Catherby in the flower patches popup",
 		position = 2,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerCatherby()
 	{
@@ -729,9 +666,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Civitas illa Fortis",
 		description = "Include Civitas illa Fortis in the flower patches popup",
 		position = 3,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerCivitasillafortis()
 	{
@@ -743,9 +678,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Falador",
 		description = "Include Falador in the flower patches popup",
 		position = 4,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerFalador()
 	{
@@ -757,9 +690,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the flower patches popup",
 		position = 5,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerFarmingguild()
 	{
@@ -771,9 +702,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kastori",
 		description = "Include Kastori in the flower patches popup",
 		position = 6,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerKastori()
 	{
@@ -785,9 +714,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend",
 		description = "Include Kourend in the flower patches popup",
 		position = 7,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerKourend()
 	{
@@ -799,9 +726,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Morytania",
 		description = "Include Morytania in the flower patches popup",
 		position = 8,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerMorytania()
 	{
@@ -813,9 +738,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Prifddinas",
 		description = "Include Prifddinas in the flower patches popup",
 		position = 9,
-		section = flowerSection,
-		hidden = true,
-		unhide = "flower_enabled"
+		section = flowerSection
 	)
 	default boolean flowerPrifddinas()
 	{
@@ -842,9 +765,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Aldarin",
 		description = "Include Aldarin in the hops patches popup",
 		position = 1,
-		section = hopsSection,
-		hidden = true,
-		unhide = "hops_enabled"
+		section = hopsSection
 	)
 	default boolean hopsAldarin()
 	{
@@ -856,9 +777,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Entrana",
 		description = "Include Entrana in the hops patches popup",
 		position = 2,
-		section = hopsSection,
-		hidden = true,
-		unhide = "hops_enabled"
+		section = hopsSection
 	)
 	default boolean hopsEntrana()
 	{
@@ -870,9 +789,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Lumbridge",
 		description = "Include Lumbridge in the hops patches popup",
 		position = 3,
-		section = hopsSection,
-		hidden = true,
-		unhide = "hops_enabled"
+		section = hopsSection
 	)
 	default boolean hopsLumbridge()
 	{
@@ -884,9 +801,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Seers' Village",
 		description = "Include Seers' Village in the hops patches popup",
 		position = 4,
-		section = hopsSection,
-		hidden = true,
-		unhide = "hops_enabled"
+		section = hopsSection
 	)
 	default boolean hopsSeersvillage()
 	{
@@ -898,9 +813,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Yanille",
 		description = "Include Yanille in the hops patches popup",
 		position = 5,
-		section = hopsSection,
-		hidden = true,
-		unhide = "hops_enabled"
+		section = hopsSection
 	)
 	default boolean hopsYanille()
 	{
@@ -927,9 +840,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Ardougne",
 		description = "Include Ardougne in the bush patches popup",
 		position = 1,
-		section = bushSection,
-		hidden = true,
-		unhide = "bush_enabled"
+		section = bushSection
 	)
 	default boolean bushArdougne()
 	{
@@ -941,9 +852,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Champions' Guild",
 		description = "Include Champions' Guild in the bush patches popup",
 		position = 2,
-		section = bushSection,
-		hidden = true,
-		unhide = "bush_enabled"
+		section = bushSection
 	)
 	default boolean bushChampionsguild()
 	{
@@ -955,9 +864,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Etceteria",
 		description = "Include Etceteria in the bush patches popup",
 		position = 3,
-		section = bushSection,
-		hidden = true,
-		unhide = "bush_enabled"
+		section = bushSection
 	)
 	default boolean bushEtceteria()
 	{
@@ -969,9 +876,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the bush patches popup",
 		position = 4,
-		section = bushSection,
-		hidden = true,
-		unhide = "bush_enabled"
+		section = bushSection
 	)
 	default boolean bushFarmingguild()
 	{
@@ -983,9 +888,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Rimmington",
 		description = "Include Rimmington in the bush patches popup",
 		position = 5,
-		section = bushSection,
-		hidden = true,
-		unhide = "bush_enabled"
+		section = bushSection
 	)
 	default boolean bushRimmington()
 	{
@@ -1012,9 +915,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 1",
 		description = "Include Kourend East 1 in the grape vines popup",
 		position = 1,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast1()
 	{
@@ -1026,9 +927,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 2",
 		description = "Include Kourend East 2 in the grape vines popup",
 		position = 2,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast2()
 	{
@@ -1040,9 +939,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 3",
 		description = "Include Kourend East 3 in the grape vines popup",
 		position = 3,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast3()
 	{
@@ -1054,9 +951,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 4",
 		description = "Include Kourend East 4 in the grape vines popup",
 		position = 4,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast4()
 	{
@@ -1068,9 +963,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 5",
 		description = "Include Kourend East 5 in the grape vines popup",
 		position = 5,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast5()
 	{
@@ -1082,9 +975,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend East 6",
 		description = "Include Kourend East 6 in the grape vines popup",
 		position = 6,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendeast6()
 	{
@@ -1096,9 +987,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 1",
 		description = "Include Kourend West 1 in the grape vines popup",
 		position = 7,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest1()
 	{
@@ -1110,9 +999,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 2",
 		description = "Include Kourend West 2 in the grape vines popup",
 		position = 8,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest2()
 	{
@@ -1124,9 +1011,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 3",
 		description = "Include Kourend West 3 in the grape vines popup",
 		position = 9,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest3()
 	{
@@ -1138,9 +1023,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 4",
 		description = "Include Kourend West 4 in the grape vines popup",
 		position = 10,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest4()
 	{
@@ -1152,9 +1035,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 5",
 		description = "Include Kourend West 5 in the grape vines popup",
 		position = 11,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest5()
 	{
@@ -1166,9 +1047,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend West 6",
 		description = "Include Kourend West 6 in the grape vines popup",
 		position = 12,
-		section = grapesSection,
-		hidden = true,
-		unhide = "grapes_enabled"
+		section = grapesSection
 	)
 	default boolean grapesKourendwest6()
 	{
@@ -1195,9 +1074,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Auburnvale",
 		description = "Include Auburnvale in the tree patches popup",
 		position = 1,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeAuburnvale()
 	{
@@ -1209,9 +1086,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Falador",
 		description = "Include Falador in the tree patches popup",
 		position = 2,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeFalador()
 	{
@@ -1223,9 +1098,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the tree patches popup",
 		position = 3,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeFarmingguild()
 	{
@@ -1237,9 +1110,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Gnome Stronghold",
 		description = "Include Gnome Stronghold in the tree patches popup",
 		position = 4,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeGnomestronghold()
 	{
@@ -1251,9 +1122,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Lumbridge",
 		description = "Include Lumbridge in the tree patches popup",
 		position = 5,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeLumbridge()
 	{
@@ -1265,9 +1134,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Taverley",
 		description = "Include Taverley in the tree patches popup",
 		position = 6,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeTaverley()
 	{
@@ -1279,9 +1146,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Varrock",
 		description = "Include Varrock in the tree patches popup",
 		position = 7,
-		section = treeSection,
-		hidden = true,
-		unhide = "tree_enabled"
+		section = treeSection
 	)
 	default boolean treeVarrock()
 	{
@@ -1308,9 +1173,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Brimhaven",
 		description = "Include Brimhaven in the fruit tree patches popup",
 		position = 1,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeBrimhaven()
 	{
@@ -1322,9 +1185,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Catherby",
 		description = "Include Catherby in the fruit tree patches popup",
 		position = 2,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeCatherby()
 	{
@@ -1336,9 +1197,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the fruit tree patches popup",
 		position = 3,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeFarmingguild()
 	{
@@ -1350,9 +1209,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Gnome Stronghold",
 		description = "Include Gnome Stronghold in the fruit tree patches popup",
 		position = 4,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeGnomestronghold()
 	{
@@ -1364,9 +1221,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kastori",
 		description = "Include Kastori in the fruit tree patches popup",
 		position = 5,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeKastori()
 	{
@@ -1378,9 +1233,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Lletya",
 		description = "Include Lletya in the fruit tree patches popup",
 		position = 6,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeLletya()
 	{
@@ -1392,9 +1245,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Tree Gnome Village",
 		description = "Include Tree Gnome Village in the fruit tree patches popup",
 		position = 7,
-		section = fruittreeSection,
-		hidden = true,
-		unhide = "fruittree_enabled"
+		section = fruittreeSection
 	)
 	default boolean fruittreeTreegnomevillage()
 	{
@@ -1421,9 +1272,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hardwood (Anglers' Retreat)",
 		description = "Include Hardwood (Anglers' Retreat) in the hardwood & redwood trees popup",
 		position = 1,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodHardwoodanglersretreat()
 	{
@@ -1435,9 +1284,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hardwood (Avium Savannah)",
 		description = "Include Hardwood (Avium Savannah) in the hardwood & redwood trees popup",
 		position = 2,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodHardwoodaviumsavannah()
 	{
@@ -1449,9 +1296,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hardwood (Fossil Island East)",
 		description = "Include Hardwood (Fossil Island East) in the hardwood & redwood trees popup",
 		position = 3,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodHardwoodfossilislandeast()
 	{
@@ -1463,9 +1308,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hardwood (Fossil Island Middle)",
 		description = "Include Hardwood (Fossil Island Middle) in the hardwood & redwood trees popup",
 		position = 4,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodHardwoodfossilislandmiddle()
 	{
@@ -1477,9 +1320,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hardwood (Fossil Island West)",
 		description = "Include Hardwood (Fossil Island West) in the hardwood & redwood trees popup",
 		position = 5,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodHardwoodfossilislandwest()
 	{
@@ -1491,9 +1332,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Redwood (Farming Guild)",
 		description = "Include Redwood (Farming Guild) in the hardwood & redwood trees popup",
 		position = 6,
-		section = hardwoodSection,
-		hidden = true,
-		unhide = "hardwood_enabled"
+		section = hardwoodSection
 	)
 	default boolean hardwoodRedwoodfarmingguild()
 	{
@@ -1520,9 +1359,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Brimhaven",
 		description = "Include Brimhaven in the spirit tree patches popup",
 		position = 1,
-		section = spirittreeSection,
-		hidden = true,
-		unhide = "spirittree_enabled"
+		section = spirittreeSection
 	)
 	default boolean spirittreeBrimhaven()
 	{
@@ -1534,9 +1371,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Etceteria",
 		description = "Include Etceteria in the spirit tree patches popup",
 		position = 2,
-		section = spirittreeSection,
-		hidden = true,
-		unhide = "spirittree_enabled"
+		section = spirittreeSection
 	)
 	default boolean spirittreeEtceteria()
 	{
@@ -1548,9 +1383,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the spirit tree patches popup",
 		position = 3,
-		section = spirittreeSection,
-		hidden = true,
-		unhide = "spirittree_enabled"
+		section = spirittreeSection
 	)
 	default boolean spirittreeFarmingguild()
 	{
@@ -1562,9 +1395,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kourend",
 		description = "Include Kourend in the spirit tree patches popup",
 		position = 4,
-		section = spirittreeSection,
-		hidden = true,
-		unhide = "spirittree_enabled"
+		section = spirittreeSection
 	)
 	default boolean spirittreeKourend()
 	{
@@ -1576,9 +1407,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Port Sarim",
 		description = "Include Port Sarim in the spirit tree patches popup",
 		position = 5,
-		section = spirittreeSection,
-		hidden = true,
-		unhide = "spirittree_enabled"
+		section = spirittreeSection
 	)
 	default boolean spirittreePortsarim()
 	{
@@ -1605,9 +1434,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Great Conch",
 		description = "Include Great Conch in the calquat patches popup",
 		position = 1,
-		section = calquatSection,
-		hidden = true,
-		unhide = "calquat_enabled"
+		section = calquatSection
 	)
 	default boolean calquatGreatconch()
 	{
@@ -1619,9 +1446,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Kastori",
 		description = "Include Kastori in the calquat patches popup",
 		position = 2,
-		section = calquatSection,
-		hidden = true,
-		unhide = "calquat_enabled"
+		section = calquatSection
 	)
 	default boolean calquatKastori()
 	{
@@ -1633,9 +1458,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Tai Bwo Wannai",
 		description = "Include Tai Bwo Wannai in the calquat patches popup",
 		position = 3,
-		section = calquatSection,
-		hidden = true,
-		unhide = "calquat_enabled"
+		section = calquatSection
 	)
 	default boolean calquatTaibwowannai()
 	{
@@ -1662,9 +1485,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Al Kharid",
 		description = "Include Al Kharid in the cactus patches popup",
 		position = 1,
-		section = cactusSection,
-		hidden = true,
-		unhide = "cactus_enabled"
+		section = cactusSection
 	)
 	default boolean cactusAlkharid()
 	{
@@ -1676,9 +1497,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Farming Guild",
 		description = "Include Farming Guild in the cactus patches popup",
 		position = 2,
-		section = cactusSection,
-		hidden = true,
-		unhide = "cactus_enabled"
+		section = cactusSection
 	)
 	default boolean cactusFarmingguild()
 	{
@@ -1705,9 +1524,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Seaweed North",
 		description = "Include Seaweed North in the seaweed patches popup",
 		position = 1,
-		section = seaweedSection,
-		hidden = true,
-		unhide = "seaweed_enabled"
+		section = seaweedSection
 	)
 	default boolean seaweedSeaweednorth()
 	{
@@ -1719,9 +1536,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Seaweed South",
 		description = "Include Seaweed South in the seaweed patches popup",
 		position = 2,
-		section = seaweedSection,
-		hidden = true,
-		unhide = "seaweed_enabled"
+		section = seaweedSection
 	)
 	default boolean seaweedSeaweedsouth()
 	{
@@ -1748,9 +1563,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Anima (Farming Guild)",
 		description = "Include Anima (Farming Guild) in the special patches popup",
 		position = 1,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialAnimafarmingguild()
 	{
@@ -1762,9 +1575,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Belladonna (Auburnvale)",
 		description = "Include Belladonna (Auburnvale) in the special patches popup",
 		position = 2,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialBelladonnaauburnvale()
 	{
@@ -1776,9 +1587,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Belladonna (Draynor Manor)",
 		description = "Include Belladonna (Draynor Manor) in the special patches popup",
 		position = 3,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialBelladonnadraynormanor()
 	{
@@ -1790,9 +1599,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Celastrus (Farming Guild)",
 		description = "Include Celastrus (Farming Guild) in the special patches popup",
 		position = 4,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialCelastrusfarmingguild()
 	{
@@ -1804,9 +1611,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Crystal tree (Prifddinas)",
 		description = "Include Crystal tree (Prifddinas) in the special patches popup",
 		position = 5,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialCrystaltreeprifddinas()
 	{
@@ -1818,9 +1623,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Hespori (Farming Guild)",
 		description = "Include Hespori (Farming Guild) in the special patches popup",
 		position = 6,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialHesporifarmingguild()
 	{
@@ -1832,9 +1635,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Mushroom (Morytania)",
 		description = "Include Mushroom (Morytania) in the special patches popup",
 		position = 7,
-		section = specialSection,
-		hidden = true,
-		unhide = "special_enabled"
+		section = specialSection
 	)
 	default boolean specialMushroommorytania()
 	{
@@ -1861,9 +1662,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Ardougne)",
 		description = "Include Compost bin (Ardougne) in the compost bins popup",
 		position = 1,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbinardougne()
 	{
@@ -1875,9 +1674,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Catherby)",
 		description = "Include Compost bin (Catherby) in the compost bins popup",
 		position = 2,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbincatherby()
 	{
@@ -1889,9 +1686,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Civitas illa Fortis)",
 		description = "Include Compost bin (Civitas illa Fortis) in the compost bins popup",
 		position = 3,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbincivitasillafortis()
 	{
@@ -1903,9 +1698,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Falador)",
 		description = "Include Compost bin (Falador) in the compost bins popup",
 		position = 4,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbinfalador()
 	{
@@ -1917,9 +1710,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Kourend)",
 		description = "Include Compost bin (Kourend) in the compost bins popup",
 		position = 5,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbinkourend()
 	{
@@ -1931,9 +1722,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Morytania)",
 		description = "Include Compost bin (Morytania) in the compost bins popup",
 		position = 6,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbinmorytania()
 	{
@@ -1945,9 +1734,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Compost bin (Prifddinas)",
 		description = "Include Compost bin (Prifddinas) in the compost bins popup",
 		position = 7,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostCompostbinprifddinas()
 	{
@@ -1959,9 +1746,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Giant compost bin (Farming Guild)",
 		description = "Include Giant compost bin (Farming Guild) in the compost bins popup",
 		position = 8,
-		section = compostSection,
-		hidden = true,
-		unhide = "compost_enabled"
+		section = compostSection
 	)
 	default boolean compostGiantcompostbinfarmingguild()
 	{
@@ -1988,9 +1773,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Mushroom Meadow (North)",
 		description = "Include Mushroom Meadow (North) in the bird houses popup",
 		position = 1,
-		section = birdhouseSection,
-		hidden = true,
-		unhide = "birdhouse_enabled"
+		section = birdhouseSection
 	)
 	default boolean birdhouseMushroommeadownorth()
 	{
@@ -2002,9 +1785,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Mushroom Meadow (South)",
 		description = "Include Mushroom Meadow (South) in the bird houses popup",
 		position = 2,
-		section = birdhouseSection,
-		hidden = true,
-		unhide = "birdhouse_enabled"
+		section = birdhouseSection
 	)
 	default boolean birdhouseMushroommeadowsouth()
 	{
@@ -2016,9 +1797,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Verdant Valley (Northeast)",
 		description = "Include Verdant Valley (Northeast) in the bird houses popup",
 		position = 3,
-		section = birdhouseSection,
-		hidden = true,
-		unhide = "birdhouse_enabled"
+		section = birdhouseSection
 	)
 	default boolean birdhouseVerdantvalleynortheast()
 	{
@@ -2030,9 +1809,7 @@ public interface FarmingPatchPopupConfig extends Config
 		name = "• Verdant Valley (Southwest)",
 		description = "Include Verdant Valley (Southwest) in the bird houses popup",
 		position = 4,
-		section = birdhouseSection,
-		hidden = true,
-		unhide = "birdhouse_enabled"
+		section = birdhouseSection
 	)
 	default boolean birdhouseVerdantvalleysouthwest()
 	{

@@ -30,8 +30,7 @@ compact), display time, size, text rendering, and a **Show test popup** tick-box
 which sound, volume. The default is the game's own **town crier ring bell**; you can pick any of the
 town crier sound effects (ring bell, bell up, bell down, scratch head, and the old bell up/down), or the
 Collection Log Popup Enhanced clips. Game sounds follow your in-game sound effect volume, and can still play when
-effects are muted. Custom clip sounds: put `common.wav`, `uncommon.wav`, `rare.wav`, `very_rare.wav`
-or `pet.wav` in `~/.runelite/time-tracking-popups/sounds`.
+effects are muted.
 
 The icon on the popup is the crop that finished (ranarr, elkhorn coral, ...). When different crops
 finish together the icon cycles through them.
@@ -56,4 +55,4 @@ plugin loaded (the Gradle files come from RuneLite's example plugin). `ConfigCon
 generated config and the patch list drift apart.
 
 Credits: popup art, sounds and rendering from Collection Log Popup Enhanced by SnakeSteak; farming
-data from RuneLite Time Tracking. All BSD 2-Clause - see `LICENSE`.
+data from RuneLite Time Tracking. See `THIRD_PARTY_NOTICES.md`.

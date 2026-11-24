@@ -5,27 +5,22 @@ package com.farmingpatchpopup.sound;
 
 import com.farmingpatchpopup.FarmingPatchPopupConfig;
 import com.farmingpatchpopup.overlay.PopupTier;
-import java.io.File;
 import java.util.EnumMap;
 import java.util.Map;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
-import net.runelite.client.RuneLite;
 import net.runelite.client.audio.AudioPlayer;
 
 /**
  * Plays the popup sound: one of the game's own town crier sound effects (played through the client,
  * so it follows the game's sound effect volume), or one of the clips Collection Log Popup Enhanced uses.
- *
- * <p>Users can override any clip by dropping a same-named .wav in {@link #SOUNDS_DIR}.
  */
 @Slf4j
 @Singleton
 public class SoundManager
 {
-	private static final File SOUNDS_DIR = new File(RuneLite.RUNELITE_DIR, "time-tracking-popups/sounds");
 	private static final Map<PopupTier, String> FILENAMES = new EnumMap<>(PopupTier.class);
 
 	static
@@ -50,11 +45,6 @@ public class SoundManager
 		this.client = client;
 		this.audioPlayer = audioPlayer;
 		this.config = config;
-
-		if (!SOUNDS_DIR.mkdirs() && !SOUNDS_DIR.isDirectory())
-		{
-			log.warn("Failed to create custom sounds directory {}", SOUNDS_DIR);
-		}
 	}
 
 	/** Must be called on the client thread (the overlay's render does). */
@@ -103,13 +93,6 @@ public class SoundManager
 
 		try
 		{
-			File override = new File(SOUNDS_DIR, filename);
-			if (override.isFile())
-			{
-				audioPlayer.play(override, gain(volume));
-				return;
-			}
-
 			String resource = "/sounds/" + filename;
 			if (SoundManager.class.getResource(resource) == null)
 			{
