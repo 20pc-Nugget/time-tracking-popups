@@ -1,22 +1,7 @@
 BSD 2-Clause License
 
-Copyright (c) 2026, <your name>
-(the Time Tracking Popups plugin code)
-
-This project includes work from other BSD 2-Clause licensed projects, each of which keeps its
-own copyright notice:
-
-  * Collection Log Popup Enhanced - Copyright (c) 2026, SnakeSteak
-    https://github.com/TimHeessels/collection-log-popup-enhanced
-    Used: the panel art (src/main/resources/Colorful, /Neutral), the sound clips
-    (src/main/resources/sounds), and the popup rendering code that PopupOverlay, PanelRecolorer,
-    PanelStyle, PanelLayout, TextRenderMode, PopupTier and SoundManager are adapted from.
-
-  * RuneLite - Copyright (c) 2018 Abex and the RuneLite contributors
-    https://github.com/runelite/runelite
-    Used: the Time Tracking farming data tables and prediction logic that the files in
-    src/main/java/com/farmingpatchpopup/data are copied/adapted from. Those files keep their
-    original copyright headers.
+Copyright (c) 2026, 20pc Nugget
+All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
