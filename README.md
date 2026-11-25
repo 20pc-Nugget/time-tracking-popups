@@ -1,7 +1,7 @@
 # Time Tracking Popups
 
 A RuneLite plugin that shows a **Collection Log Popup Enhanced style popup** (with the game's town crier
-sound by default) when the farming patches, compost bins and bird houses you pick are ready or diseased. It reads the data RuneLite's **Time Tracking** plugin already stores, so
+sound by default) selected patches are ready or diseased.  This is different from the Time Tracking Reminders plugin because it displays an in-game notification and sound, but it reads the data RuneLite's **Time Tracking** plugin already stores, so
 **the Time Tracking plugin must be enabled** (RuneLite does not let a plugin switch it on for you).
 
 ## What triggers a popup
