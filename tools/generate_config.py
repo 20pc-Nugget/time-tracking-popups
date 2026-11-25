@@ -223,6 +223,31 @@ def main():
 	}
 
 	@ConfigItem(
+		keyName = "disableInCombat",
+		name = "Disable in combat",
+		description = "Hold popups while you are fighting, so they don't get in the way."
+			+ "<br>They show as soon as you are out of combat, so you don't miss them.",
+		position = 7,
+		section = notificationsSection
+	)
+	default boolean disableInCombat()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+		keyName = "disableInInstances",
+		name = "Disable in instances",
+		description = "Happy DIOR? Sit tbh",
+		position = 8,
+		section = notificationsSection
+	)
+	default boolean disableInInstances()
+	{
+		return false;
+	}
+
+	@ConfigItem(
 		keyName = "panelStyle",
 		name = "Panel style",
 		description = "Colourful tints the panel with each patch type's colour. Neutral keeps the plain OSRS-style art."
